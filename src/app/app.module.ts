@@ -40,13 +40,15 @@ registerLocaleData(en);
 export class AppModule {
   constructor(
     private inj: Injector
-  ) { }
-  ngDoBootstrap() {
+  ) {
     let custom = el.createCustomElement(DemoPageComponent, { injector: this.inj });
     customElements.define('demo-page', custom);
 
     custom = el.createCustomElement(ListPageComponent, { injector: this.inj });
     customElements.define('list-page', custom);
+  }
+  ngDoBootstrap() {
+
   }
 
 }
