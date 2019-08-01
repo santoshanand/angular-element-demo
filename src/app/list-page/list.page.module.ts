@@ -9,12 +9,14 @@ import en from '@angular/common/locales/en';
 import * as el from '@angular/elements';
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
 import { ListPageComponent } from './list-page.component';
+import { SlotDemoComponent } from '../slot-demo/slot-demo.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     ListPageComponent,
+    SlotDemoComponent
   ],
   imports: [
     BrowserModule,

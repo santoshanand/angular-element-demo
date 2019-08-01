@@ -14,13 +14,12 @@ import { ListPageModule } from './list-page/list.page.module';
 import { DemoPageModule } from './demo-page/demo.page.module';
 import { ListPageComponent } from './list-page/list-page.component';
 import { DemoPageComponent } from './demo-page/demo-page.component';
+import { SlotDemoComponent } from './slot-demo/slot-demo.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    // DemoPageComponent,
-    // ListPageComponent
   ],
   imports: [
     BrowserModule,
